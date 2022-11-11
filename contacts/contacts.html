@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Contacts</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="">Chundrachuchundra</a>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a class="menu__link " href="../index.html">Home</a></li>
+				<li><a class="menu__link" href="../shop/shop.html">Shop</a></li>
+				<li><a class="menu__link menu__link_active" href="">Contacts</a></li>
+			</ul>
+		</nav>
+		<form class="form-search">
+			<input class="form-search__search" type="search" name="search" placeholder="Поиск">
+			<input type="image" src="../images/search.jpg">
+		</form>
+	</header>
+	
+	<div class="container">
+		<h3>Регистрация</h3>
+	<form class="form-registration">
+		<p class=form-registration__data>
+			<input type="text" name="user_name" placeholder="Ваше имя" required>
+			<input type="umnber" name="user_age" placeholder="Ваш возраст" min="6" max="110">
+			<input type="email" name="user_email" placeholder="Емейл" required>
+			<input type="password" name="user_password" placeholder="Пароль" required>
+		</p>
+		<p>
+			<b>Ваш любимый цвет</b>
+			<br>
+			<input type="color" name="user_color">
+		</p>
+		<p>
+			<b>выберите дату</b>
+			<br>
+			<input type="date" name="user_date">
+		</p>
+		<p>
+			<b>ваше фото</b>
+			<br>
+			<input type="file" name="user_photo">
+		</p>
+		<p>
+			<b>ваш любимый жанр</b>
+			<br>
+			<label for="shooter">Шутер</label>
+			<input type="checkbox" name="user_genre" value="shooter" id="shooter" >
+			<label for="mmo_rpg">ММО Рпг</label>
+			<input type="checkbox" name="user_genre" value="mmo_rpg" id="mmo_rpg">
+			<label for="arcade">Аркада</label>
+			<input type="checkbox" name="user_genre" value="arcade" id="arcade">
+		</p>
+		<p>
+			<b>выберите любимую платформу</b>
+			<br>
+			<label for="pc">Пк гейминг</label>
+			<input type="radio" name="platform" value="pc" id="pc" checked>
+			<br>
+			<label for="mobile">Мобильный гейминг</label>
+			<input type="radio" name="platform" value="mobile" id="mobile">
+			<br>
+			<label for="console">Консольный гейминг</label>
+			<input type="radio" name="platform" value="console" id="console">
+		</p>
+		<p>
+			<textarea class="form-registration__about" placeholder="раскажите о себе"></textarea>
+		</p>
+		<p>
+			<button type="submit" class="btn btn-success" >отправить</button>
+			<button type="reset" class="btn">очистить</button>
+		</p>
+	</form>	
+	</div>
+</body>
+</html>
+
